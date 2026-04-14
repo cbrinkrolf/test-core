@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.cbrinkrolf</groupId>
   <artifactId>test-core</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   
   	<properties>
 		<maven.compiler.source>17</maven.compiler.source>
