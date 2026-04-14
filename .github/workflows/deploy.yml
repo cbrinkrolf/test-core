@@ -41,8 +41,9 @@ jobs:
       - name: print Java version
         run: java -version
       - name: Build with Maven
-        run: mvn package -DskipTests --file pom.xml
-        run: ls -la
+        run: |
+          mvn package -DskipTests --file pom.xml
+          ls -la
       - name: Upload Release Asset
         id: upload-release-asset 
         uses: actions/upload-release-asset@v1
