@@ -8,19 +8,15 @@ jobs:
   build:
     permissions:
       issues: write
-      Actions: write
-      Checks: write
-      Contents: write
-      Deployments: write
-      Discussions: write
-      Issues: write
+      actions: write
+      contents: write
+      deployments: write
+      discussions: write
       Metadata: read
-      Packages: write
-      Pages: write
-      PullRequests: write
-      RepositoryProjects: write
-      SecurityEvents: write
-      Statuses: write
+      pages: write
+      pull_requests: write
+      security_events: write
+      statuses: write
     name: Create Release
     runs-on: ubuntu-latest
     if: github.repository == 'cbrinkrolf/test-core' # Only run on main repository and not forks
