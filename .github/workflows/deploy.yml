@@ -5,22 +5,22 @@ on:
     tags:
       - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
 jobs:
+	permissions:
+		issues: write
+		Actions: write
+		Checks: write
+	  	Contents: write
+	  	Deployments: write
+	  	Discussions: write
+	  	Issues: write
+	  	Metadata: read
+	  	Packages: write
+	  	Pages: write
+	  	PullRequests: write
+	  	RepositoryProjects: write
+	  	SecurityEvents: write
+	  	Statuses: write
 	build:
-		permissions:
-			issues: write
-			Actions: write
-			Checks: write
-	  		Contents: write
-	  		Deployments: write
-	  		Discussions: write
-	  		Issues: write
-	  		Metadata: read
-	  		Packages: write
-	  		Pages: write
-	  		PullRequests: write
-	  		RepositoryProjects: write
-	  		SecurityEvents: write
-	  		Statuses: write
     name: Create Release
     runs-on: ubuntu-latest
     if: github.repository == 'cbrinkrolf/test-core' # Only run on main repository and not forks
