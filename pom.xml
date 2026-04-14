@@ -11,7 +11,7 @@
 	</properties>
 
 	<build>
-		<finalName>test-core-v.${project.version}</finalName>
+		<finalName>test-core-v${project.version}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
